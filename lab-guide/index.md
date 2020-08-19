@@ -188,11 +188,3 @@ kubectl delete -f examples/snap-sc.yaml
 
 Wenn Sie sowohl `tridentctl get snapshot -n trident` als auch `tridentctl get volume -n trident` vergleichen, sehen Sie nach 30 bis 60 Sekunden, dass der Snapshot und das Volumen erfolgreich entfernt wurden.
 
-## Anwenden dessen, was wir gelernt haben
-
-Um das Gelernte anzuwenden, werden wir die [voting app example] (https://github.com/dockersamples/example-voting-app) von Docker einsetzen. 
-
-Um die Abstimmungs-App jetzt auszurollen, geben Sie bitte `kubectl create -f example-voting-app/k8s-specifications/` ein.
-
-Die Abstimmungsschnittstelle wird auf Port 31000 auf jedem Host des Clusters verfügbar sein, das Ergebnis jeweils auf Port 31001.
-
